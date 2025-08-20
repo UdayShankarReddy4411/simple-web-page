@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal Exam Page</title>
+    <style>
+        *{
+            background-color:azure;
+            font-style:italic;
+        }
+        header{
+            font-family: 'Times New Roman', serif;
+            color:rgb(0, 102, 204);
+            background-color:#b9d9f6;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px;
+        }
+        .matter{
+            font-family: Arial, sans-serif;
+            color: rgb(0, 51, 102);
+            font-size: 18px;
+            margin: 20px;
+            text-align: center;
+        }
+        .hero{
+            border: 2px solid turquoise;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px grey;
+        }
+        ul, ol, dl { margin-left: 60px; }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th { background-color: #b9d9f6; }
+        form {
+            width: 60%;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #f5faff;
+        }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea, button {
+            margin-top: 5px;
+            padding: 6px;
+            width: 95%;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: rgb(70,70,70);
+        }
+        #info{
+            font-style: italic;
+            color: rgb(100, 100, 100);
+            margin: 20px auto;
+            width: 80%;
+            text-align: justify;
+        }
+        #movies{
+            color: rgba(45, 137, 170, 1);
+            font-weight: bold;
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>A Page About My Hero...</header>
+
+    <center>
+        <img class="hero" src="uday.png" alt="Hero Image" width="250" height="320">
+    </center>
+
+    <p class="matter">
+        He is a super star.<br>
+        But here in the image he appears to be a gangster.
+    </p>
+    <div id="info"><p>Uday was not the kind of hero you see in movies. He did not have magical powers or wear a special costume. His strength was of a different kind. He was known throughout his village for his calm mind and helpful nature. If two families had an argument, Vikram was the one who could make them listen to each other and find a peaceful solution. He was also very observant. He could notice a small crack in a dam before it became a big problem, or see that a family was struggling even when they didn't ask for help. His greatest ability was his knack for bringing people together. When the village needed a new well, it was Vikram who organised everyone, making the hard work feel like a community festival. He never wanted praise; for him, the happiness and safety of his people was the only reward.</p></div>
+    <h2 style="color: rgba(189, 84, 84, 1);">Movies he has acted:</h2>
+    <ul id="movies"style="text-style:normal; list-style-type: square;">
+        <li>Movie 1</li>
+        <li>Movie 2</li>
+        <li>Movie 3</li>
+        <li>Movie 4</li>
+        <li>Movie 5</li>
+    </ul>
+
+    <h2 style="color:rgb(189,84,84,1);">Movie Rankings</h2>
+    <ol id="movies">
+        <li>Blockbuster 1</li>
+        <li>Hit 2</li>
+        <li>Average 3</li>
+    </ol>
+
+    <h2 style="color:rgb(189,84,84,1)">Awards (Description List)</h2>
+    <dl id="movies">
+        <dt>National Award</dt><dd>Best Actor 2019</dd>
+        <dt>Filmfare</dt><dd>Best Hero 2021</dd>
+    </dl>
+
+    <h2>Hero Stats (Table)</h2>
+    <table>
+        <caption>Movies & Ratings</caption>
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Year</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Movie 1</td><td>2018</td><td>★★★★☆</td></tr>
+            <tr><td>Movie 2</td><td>2019</td><td>★★★★★</td></tr>
+            <tr><td>Movie 3</td><td>2020</td><td>★★★☆☆</td></tr>
+        </tbody>
+    </table>
+    <h2>His voice and video:</h2>
+    <div>
+        <audio controls>
+            <source src="uday_voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+    </div>
+    <h2>Feedback Form</h2>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label for="fav">Favorite Movie:</label>
+        <select id="fav">
+            <option>Movie 1</option>
+            <option>Movie 2</option>
+            <option>Movie 3</option>
+        </select>
+
+        <label for="msg">Message:</label>
+        <textarea id="msg" rows="3"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Explore More</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px;">
+        <!-- YouTube Frame -->
+        <iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+            title="YouTube video" frameborder="1" 
+            allowfullscreen>
+        </iframe>
+        <iframe src="https://en.wikipedia.org/wiki/Mahesh_Babu" 
+            width="300" height="200" frameborder="1">
+        </iframe>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197930369385!2d-122.41941508468163!3d37.77492977975978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d5d9e3a93%3A0xdea65d4e0ef9c7a4!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1693848960000!5m2!1sen!2sus" 
+            width="300" height="200" style="border:1;" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Hero Fan Page. All rights reserved.</p>
+        <p><time datetime="2025-08-20">Last updated: Aug 20, 2025</time></p>
+    </footer>
+</body>
+</html>
